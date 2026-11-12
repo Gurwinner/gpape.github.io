@@ -1,0 +1,168 @@
+/*definitions des couleurs*/
+:root
+    {
+        --couleurbandeau:  rgb(153, 0, 77); 
+        --couleurbackground: rgba(255, 241, 248, 0.945);
+
+        --couleurbackbouton:#ffb6c1;
+        --couleurtxtbouton:#130164;
+
+        background-color: var(--couleurbackground);
+        font-size: 13pt;
+        font-family: Atkinson;
+        
+    }
+
+@font-face{
+    font-family: "Atkinson";
+    src:
+    local("Atkinson Hyper Legible Next Etr"),
+    url("AtkinsonHyperlegibleNext-VariableFont_wght.ttf");
+}
+
+#principal
+    {
+        margin-left: 5%;
+        display: flex;
+        align-items: center;
+    }
+
+#texte_principal
+    {  
+        width: 60%;
+        /* border: 0.01cm solid black; */
+    }
+
+#texte_principal_bis
+    {  
+        width: 50%;
+        /* border: 0.01cm solid black; */
+    }
+
+#contact
+    {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+#img_principal
+    {
+        height: min-content;
+        text-align: center;
+        padding: 2% 2% 0;
+        margin-left: 5%;
+        width:min-content;
+        font-size: 11pt;
+
+    }
+
+#developpement
+    {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+
+
+/* #presentation
+    {   
+        margin-left: 10%;
+        margin-right: 10%;
+
+        /* border: 0.01cm solid black;
+        border-radius:30px;
+    }
+*/
+
+/* #domaine
+    {
+        display:flex;
+
+        
+    }
+*/
+
+/* #domaine_maths
+    {
+        width: 70%;
+        border: 0.01cm solid black;
+        border-radius:30px;
+    }
+*/
+
+/* #domaine_autre
+    {
+        border: 0.01cm solid black;
+        width:auto;
+
+    }
+*/
+/* h3 
+    {
+        color :red;
+    }
+*/
+a
+    {
+        color :blue;
+    }
+
+/* p      
+    {
+        vertical-align: middle;
+        border: 0.01cm solid black;
+    }
+*/
+
+nav
+    {
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+        border: 0.01cm solid black;
+        padding: 4px;
+        background-color: var(--couleurbandeau);
+    }
+
+nav a
+    {
+        text-decoration: none;
+    }
+
+nav a:hover, nav a:focus-visible 
+    {
+        color: var(--couleurbackbouton);
+        background-color: var(--couleurtxtbouton);
+        border-color: var(--couleurbackbouton);
+    }
+
+nav a:active
+    {
+        background-color:black;
+        color: white;
+        border-color: white;
+    }
+
+
+nav ul 
+    {
+        list-style-type:none;
+        display:flex;
+
+    }
+
+nav ul li a
+    {
+        margin-right: 300 px;
+        margin-left: 20 px;
+    }
+
+a.bouton-nav
+    {
+        border: var(--couleurtxtbouton) 0.07cm solid ;
+        padding: 5px;
+        background-color: var(--couleurbackbouton); 
+        color:var(--couleurtxtbouton);
+        border-radius: 8px;
+
+    }
